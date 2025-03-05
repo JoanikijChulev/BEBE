@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Angela Mladenovska - Portfolio</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom Pink Color Scheme Styles -->
+    <style>
+        :root {
+            --primary: #ffa0bf;   /* pink */
+            --secondary: #fedfc1f4; /* lighter pink */
+            --accent: #ff0088e1;    /* very light brown */
+            --white: #FFFFFF;
+        }
+        /* Override background and text colors */
+        .bg-primary {
+            background-color: var(--primary) !important;
+        }
+        .text-primary {
+            color: var(--secondary) !important;
+        }
+        .btn-outline-primary {
+            color: var(--accent);
+            border-color: var(--accent);
+        }
+        .btn-outline-primary:hover {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+        /* Navbar adjustments */
+        .navbar.bg-light {
+            background-color: var(--white) !important;
+        }
+        .navbar-light .navbar-nav .nav-link {
+            color: var(--primary);
+        }
+        .navbar-light .navbar-nav .nav-link:hover {
+            color: var(--secondary);
+        }
+        .btn-outline-light {
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+        .btn-outline-light:hover {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+        /* Headings and body background */
+        h1, h3, h4, h5, h6 {
+            color: var(--primary);
+        }
+        body {
+            background-color: var(--white);
+        }
+        /* Borders and progress bars */
+        .border-primary {
+            border-color: var(--primary) !important;
+        }
+        .progress-bar.bg-primary {
+            background-color: var(--primary) !important;
+        }
+        .progress-bar.bg-warning {
+            background-color: var(--secondary) !important;
+        }
+        .progress-bar.bg-danger {
+            background-color: var(--accent) !important;
+        }
+        .progress-bar.bg-dark {
+            background-color: var(--primary) !important;
+        }
+        .progress-bar.bg-info {
+            background-color: var(--secondary) !important;
+        }
+        /* Service and portfolio icons/buttons */
+        .service-icon.bg-primary {
+            background-color: var(--secondary) !important;
+        }
+        .portfolio-btn.bg-primary {
+            background-color: var(--secondary) !important;
+        }
+        /* Ensure the contact header container has enough height */
+        #contact .position-relative {
+            min-height: 200px;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-primary">Angela</span>Mladenovska ♡</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#qualification" class="nav-item nav-link">Resume</a>
+                <!-- Removed Skill, Testimonial, and Blog links -->
+                <a href="#service" class="nav-item nav-link">Skills</a>
+                <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+            <!-- Adjusted Hire Me button to link to the Contact section -->
+            <a href="#contact" class="btn btn-outline-primary">Hire Me</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profile.jpeg" alt="">
+                </div>
+                <div class="col-lg-7 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Angela Mladenovska</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="typed-text d-none">Data Scientist, Engineer, ML Developer, Programmer, Researcher</div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <a href="" class="btn btn-outline-primary mr-5">Download CV</a>
+                        <!-- Replaced video play button with GitHub button; always visible -->
+                        <a href="https://github.com/angelamladenovska" class="btn btn-outline-primary ml-4">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
+                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="img/about.jpeg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4">Data Scientist & Analyst, Machine Learning Engineer</h3>
+                    <p>I transform raw data into actionable insights using advanced statistical methods and machine learning techniques. With a strong background in mathematics and computer science, I design robust data pipelines, build predictive models, and deploy algorithms that drive strategic decision-making. Proficient in Python, R, SQL, and popular ML frameworks, I excel in data wrangling, exploratory analysis, and visualization to uncover trends and enhance operational efficiency.</p>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2">
+                            <h6>Name: <span class="text-secondary">Angela Mladenovska</span></h6>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h6>Birthday: <span class="text-secondary">5 July 2001</span></h6>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h6>Degree: <span class="text-secondary">Masters</span></h6>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h6>Phone: <span class="text-secondary">+389 78-446-406</span></h6>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h6>Email: <span class="text-secondary">amladenovska001@gmail.com</span></h6>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h6>Address: <span class="text-secondary">Skopje, Macedonia</span></h6>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h6>Freelance: <span class="text-secondary">On Agreement</span></h6>
+                        </div>
+                    </div>
+                    <!-- Removed the Learn More button -->
+                    <a href="#contact" class="btn btn-outline-primary mr-4">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Qualification Start -->
+<div class="container-fluid py-5" id="qualification">
+    <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
+            <h1 class="position-absolute text-uppercase text-primary">Education &amp; Expericence</h1>
+        </div>
+        <div class="row align-items-center">
+            <!-- Education Column -->
+            <div class="col-lg-6">
+                <h3 class="mb-4">My Education</h3>
+                <!-- Overall paragraph removed -->
+                <div class="border-left border-primary pt-2 pl-4 ml-2">
+                    <!-- Education Item 1 -->
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1">
+                            <a href="https://www.finki.ukim.mk/" class="text-primary">Bachelor of Science - BS, Computer Software Engineering</a>
+                        </h5>
+                        <p class="mb-2">
+                            <strong>Faculty of Computer Science and Engineering - Skopje</strong> | 
+                            <small>Oct 2020 - Sep 2024</small>
+                        </p>
+                        <p>A comprehensive undergraduate program that provided a strong foundation in software engineering and computer science.</p>
+                    </div>
+                    <!-- Education Item 2 -->
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1">
+                            <a href="https://www.finki.ukim.mk/" class="text-primary">Master's Degree, Data Science</a>
+                        </h5>
+                        <p class="mb-2">
+                            <strong>Faculty of Computer Science and Engineering - Skopje</strong> | 
+                            <small>Oct 2024 - Present</small>
+                        </p>
+                        <p>Currently pursuing advanced studies to further enhance my analytical and computational skills in Data Science.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Experience Column -->
+            <div class="col-lg-6">
+                <h3 class="mb-4">My Expericence</h3>
+                <!-- Overall paragraph removed -->
+                <div class="border-left border-primary pt-2 pl-4 ml-2">
+                    <!-- Experience Item 1 -->
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1">
+                            <a href="https://axaptamasters.com/" class="text-primary">Data Analyst Intern</a>
+                        </h5>
+                        <p class="mb-2">
+                            <strong>Axapta Masters · Full-time</strong> | 
+                            <small>Feb 2025 - Present</small>
+                        </p>
+                        <p>Working in a dynamic team to analyze data and generate actionable insights in Skopje, North Macedonia.</p>
+                    </div>
+                    <!-- Experience Item 2 -->
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1">
+                            <a href="https://www.stat.gov.mk/Default_en.aspx" class="text-primary">Statistician &amp; Data Analyst</a>
+                        </h5>
+                        <p class="mb-2">
+                            <strong>State Statistical Office · Full-time</strong> | 
+                            <small>Jan 2024 - Feb 2025</small>
+                        </p>
+                        <p>Performed statistical analyses and data reporting at a national level, supporting decision-making processes in North Macedonia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Qualification End -->
+
+    <!-- Services Start -->
+<div class="container-fluid pt-5" id="service">
+    <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Service</h1>
+            <h1 class="position-absolute text-uppercase text-primary">My Services</h1>
+        </div>
+        <div class="row pb-3">
+            <!-- Data Science Service -->
+            <div class="col-lg-4 col-md-6 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                    <i class="fa fa-2x fa-chart-line service-icon bg-primary text-white mr-3"></i>
+                    <h4 class="font-weight-bold m-0">Data Science</h4>
+                </div>
+                <p>Leveraging statistical methods and machine learning to transform raw data into actionable insights.</p>
+            </div>
+            <!-- ML Development Service -->
+            <div class="col-lg-4 col-md-6 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                    <i class="fa fa-2x fa-microchip service-icon bg-primary text-white mr-3"></i>
+                    <h4 class="font-weight-bold m-0">ML Development</h4>
+                </div>
+                <p>Designing, training, and deploying machine learning models to solve complex challenges.</p>
+            </div>
+            <!-- General Programming Service -->
+            <div class="col-lg-4 col-md-6 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                    <i class="fa fa-2x fa-code service-icon bg-primary text-white mr-3"></i>
+                    <h4 class="font-weight-bold m-0">General Programming</h4>
+                </div>
+                <p>Developing scalable software solutions and robust applications across multiple platforms.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Services End -->
+
+
+    <!-- Portfolio Start -->
+    <div class="container-fluid pt-5 pb-3" id="portfolio">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Gallery</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Portfolio</h1>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mb-2">
+                    <ul class="list-inline mb-4" id="portfolio-flters">
+                        <li class="btn btn-sm btn-outline-primary m-1 active" data-filter="*">All</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Design</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Development</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Marketing</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-2.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-3.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-4.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-5.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-5.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-6.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-6.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio End -->
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form text-center">
+                        <div id="success"></div>
+                        <!-- Updated Contact Form using Web3Forms with hCaptcha -->
+                        <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+                            <!-- Replace with your Access Key -->
+                            <input type="hidden" name="access_key" value="7922d614-1ccd-4274-810e-3b346073f352">
+                            <div class="form-row">
+                                <div class="control-group col-sm-6">
+                                    <input type="text" class="form-control p-4" id="name" name="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-sm-6">
+                                    <input type="email" class="form-control p-4" id="email" name="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" id="subject" name="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control py-3 px-4" rows="5" id="message" name="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <!-- Honeypot Spam Protection -->
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                            <!-- Step 1: Add hCaptcha widget -->
+                            <div class="h-captcha" data-captcha="true"></div>
+                            <div>
+                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" href="https://www.facebook.com/share/129BzRxKY8Z/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/angelamladenovska/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social" href="https://www.instagram.com/amladenovska_/"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">AMladenovska</a>. All Rights Reserved. Designed by Angela ♡ and my best friend <a class="text-white font-weight-bold" href="https://jchulev.com">Chulev ♡</a></p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Step 2: Add the Web3Forms hCaptcha script -->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+
+    <!-- Client Side Validation for hCaptcha -->
+    <script>
+        const form = document.getElementById('contactForm');
+
+        form.addEventListener('submit', function (e) {
+            // Look for the hCaptcha response textarea
+            const hCaptcha = form.querySelector('textarea[name="h-captcha-response"]');
+            if (!hCaptcha || !hCaptcha.value.trim()) {
+                e.preventDefault();
+                alert("Please fill out captcha field.");
+                return;
+            }
+        });
+    </script>
+</body>
+
+</html>
